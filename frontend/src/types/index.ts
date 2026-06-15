@@ -1,5 +1,6 @@
 export * from './certification';
 export * from './enums';
+export * from './highRiskDisclosure';
 export * from './incident';
 export * from './inspection';
 export * from './roles';

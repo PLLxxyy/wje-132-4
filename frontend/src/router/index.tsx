@@ -1,6 +1,7 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { CertReview } from '../pages/CertReview';
 import { Dashboard } from '../pages/Dashboard';
+import { HighRiskDisclosureManage } from '../pages/HighRiskDisclosure';
 import { IncidentManage } from '../pages/IncidentManage';
 import { InspectionManage } from '../pages/InspectionManage';
 import { TrainingManage } from '../pages/TrainingManage';
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
       { path: 'incidents', element: <IncidentManage /> },
       { path: 'inspections', element: <InspectionManage /> },
       { path: 'trainings', element: <TrainingManage /> },
+      { path: 'high-risk-disclosures', element: <HighRiskDisclosureManage /> },
       {
         path: 'certifications',
         element: (

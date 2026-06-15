@@ -4,6 +4,7 @@ import { AuditController } from './controllers/audit.controller';
 import { AuthController } from './controllers/auth.controller';
 import { CertificationController } from './controllers/certification.controller';
 import { DashboardController } from './controllers/dashboard.controller';
+import { HighRiskDisclosureController } from './controllers/highRiskDisclosure.controller';
 import { IncidentController } from './controllers/incident.controller';
 import { InspectionController } from './controllers/inspection.controller';
 import { TrainingController } from './controllers/training.controller';
@@ -13,6 +14,7 @@ import { AuditLogMiddleware } from './middlewares/auditLog.middleware';
 import { AuthMiddleware } from './middlewares/auth.middleware';
 import { AuditLog } from './models/auditLog.entity';
 import { WorkerCertification } from './models/certification.entity';
+import { HighRiskDisclosure } from './models/highRiskDisclosure.entity';
 import { InspectionItem } from './models/inspectionItem.entity';
 import { SafetyIncident } from './models/incident.entity';
 import { SafetyInspection } from './models/inspection.entity';
@@ -24,6 +26,7 @@ import { AuditService } from './services/audit.service';
 import { AuthService } from './services/auth.service';
 import { CertificationService } from './services/certification.service';
 import { DashboardService } from './services/dashboard.service';
+import { HighRiskDisclosureService } from './services/highRiskDisclosure.service';
 import { IncidentService } from './services/incident.service';
 import { InspectionService } from './services/inspection.service';
 import { TrainingService } from './services/training.service';
@@ -31,6 +34,7 @@ import { TrainingService } from './services/training.service';
 const entities = [
   AuditLog,
   WorkerCertification,
+  HighRiskDisclosure,
   InspectionItem,
   SafetyIncident,
   SafetyInspection,
@@ -46,6 +50,7 @@ const entities = [
     AuthController,
     CertificationController,
     DashboardController,
+    HighRiskDisclosureController,
     IncidentController,
     InspectionController,
     TrainingController,
@@ -56,6 +61,7 @@ const entities = [
     AuthService,
     CertificationService,
     DashboardService,
+    HighRiskDisclosureService,
     IncidentService,
     InspectionService,
     TrainingService,

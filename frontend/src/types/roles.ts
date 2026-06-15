@@ -18,3 +18,6 @@ export const canReviewCertification = (role: UserRole) =>
 
 export const canCloseIncident = (role: UserRole) =>
   role === UserRole.Admin || role === UserRole.SafetyManager;
+
+export const canCloseDisclosure = (role: UserRole) =>
+  role === UserRole.Admin || role === UserRole.SafetyManager;

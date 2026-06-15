@@ -73,6 +73,23 @@ export enum UserRole {
   Worker = 'Worker',
 }
 
+export enum DisclosureStatus {
+  Draft = 'Draft',
+  Signed = 'Signed',
+  Closed = 'Closed',
+}
+
+export enum HighRiskWorkType {
+  HighAltitude = 'HighAltitude',
+  DeepExcavation = 'DeepExcavation',
+  Lifting = 'Lifting',
+  Scaffolding = 'Scaffolding',
+  ElectricWork = 'ElectricWork',
+  HotWork = 'HotWork',
+  ConfinedSpace = 'ConfinedSpace',
+  Other = 'Other',
+}
+
 export enum ErrorCode {
   Unauthorized = 'UNAUTHORIZED',
   Forbidden = 'FORBIDDEN',

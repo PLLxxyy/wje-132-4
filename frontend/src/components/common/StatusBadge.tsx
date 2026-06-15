@@ -1,11 +1,12 @@
 import { Badge, Tag } from 'antd';
 import {
   CertStatus,
+  DisclosureStatus,
   IncidentStatus,
   InspectionStatus,
 } from '../../types/enums';
 
-type StatusValue = IncidentStatus | InspectionStatus | CertStatus | string;
+type StatusValue = IncidentStatus | InspectionStatus | CertStatus | DisclosureStatus | string;
 
 const statusMap: Record<string, { color: string; label: string; badge: 'success' | 'processing' | 'warning' | 'error' | 'default' }> = {
   [IncidentStatus.Reported]: { color: 'orange', label: '已上报', badge: 'warning' },
@@ -20,6 +21,9 @@ const statusMap: Record<string, { color: string; label: string; badge: 'success'
   [CertStatus.Approved]: { color: 'green', label: '已通过', badge: 'success' },
   [CertStatus.Rejected]: { color: 'red', label: '已驳回', badge: 'error' },
   [CertStatus.Expired]: { color: 'volcano', label: '已过期', badge: 'error' },
+  [DisclosureStatus.Draft]: { color: 'default', label: '草稿', badge: 'default' },
+  [DisclosureStatus.Signed]: { color: 'green', label: '已签字', badge: 'success' },
+  [DisclosureStatus.Closed]: { color: 'blue', label: '已关闭', badge: 'processing' },
 };
 
 export function StatusBadge({ status, compact = false }: { status: StatusValue; compact?: boolean }) {

@@ -2,6 +2,7 @@ import {
   AlertTriangle,
   ClipboardCheck,
   FileCheck2,
+  FileWarning,
   GraduationCap,
   LayoutDashboard,
   ScrollText,
@@ -16,6 +17,7 @@ const { Header, Content, Sider } = Layout;
 
 const menuItems = [
   { key: '/dashboard', icon: <LayoutDashboard size={18} />, label: '安全概览' },
+  { key: '/high-risk-disclosures', icon: <FileWarning size={18} />, label: '高危作业交底' },
   { key: '/incidents', icon: <AlertTriangle size={18} />, label: '事件管理' },
   { key: '/inspections', icon: <ClipboardCheck size={18} />, label: '检查管理' },
   { key: '/trainings', icon: <GraduationCap size={18} />, label: '培训管理' },

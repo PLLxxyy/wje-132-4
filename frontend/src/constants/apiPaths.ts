@@ -29,6 +29,12 @@ export const apiPaths = {
     renew: (id: number) => `/api/certifications/${id}/renew`,
     expiring: '/api/certifications/alerts/expiring',
   },
+  highRiskDisclosures: {
+    base: '/api/high-risk-disclosures',
+    detail: (id: number) => `/api/high-risk-disclosures/${id}`,
+    sign: (id: number) => `/api/high-risk-disclosures/${id}/sign`,
+    close: (id: number) => `/api/high-risk-disclosures/${id}/close`,
+  },
   uploads: {
     image: '/api/uploads/image',
   },
